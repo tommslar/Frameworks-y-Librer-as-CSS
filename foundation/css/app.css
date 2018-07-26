@@ -1,20 +1,25 @@
 body{
 	font-family: 'Roboto';
 	height: 100%;
+	color: #444;
+	background-image: url("../imagenes/fondo.jpg");
+    background-repeat: repeat-xy;
 }
-h1{
+h1,h3, h4{
 	font-family: 'Lobster', cursive;
 }
-#cuerpo{
-	height: 600px;
-	background-color: yellow;
-}
+
 #side-menu{
-	height: 500px;
-	background-color: red;
+	border-right: 2px solid #444;
+}
+#side-menu .encabezado{
+	background-color: #1779ba;
+	color: white;
 }
 .encabezado{
  	height: 120px;
+ 	border-bottom: 2px dashed lightgrey;
+    margin-bottom: 40px;
 }
 .encabezado h1{
 	float: right;
@@ -30,9 +35,79 @@ h1{
   background-repeat: no-repeat;
   padding: 0.75rem 1.25rem 0.75rem 2rem;
 }
+#main-menu ul li{
+    border: 2px dashed lightgray;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+#main-menu ul li:hover{
+	background-color: #ffc761;
+	border-radius: 30px;
+}
+#main-menu ul li a:hover{
+	color: white;
+}
+#favoritos img{
+	width: 100%;
+	margin-bottom: 5px;
+}
+#favoritos img:hover{
+	filter: brightness(60%);
+}
+#historial ul{
+	margin-left: 0px;
+}
+.list-group {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background: #fefefe;
+  box-shadow: none;
+  overflow: hidden;
+}
+.list-group > :last-child {
+  margin-bottom: 0;
+}
+.list-group-item {
+  padding: 1rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+.list-group-item > :last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.list-group-item:hover {
+  color: #fefefe;
+  background-color: #1779ba;
+  border-color: 1px solid #1779ba;
+}
 #contenido{
-	height: 500px;
-	background-color: blue;
+}
+#feed {
+    padding: 7rem;
+    padding-top: 1rem;
+}
+.entrada{
+	background-color: #ffa5009e;
+	color: white;
+	padding: 2em;
+    padding-top: 1em;
+    border-radius: 20px;
+}
+.entrada h6{
+	font-style: italic;
+}
+.entrada img{
+	width: 100%;
+	margin-bottom: 3%;
+}
+.entrada p{
+	margin-bottom: 3%;
+}
+.entrada textarea{
+	margin-bottom: 0px;
 }
 footer{
 	height: 55px;
@@ -43,3 +118,27 @@ footer p{
 	color: white;
 	padding-top: 1%;		
 }
+@media (max-width: 645px) {
+	#contenido .encabezado{
+		display: none;
+	}
+	#side-menu .encabezado{
+		height: 110px;
+	}
+	#side-menu .encabezado h1, #side-menu .encabezado h5{
+		float: none;
+		text-align: center;
+	}
+	#side-menu .encabezado h1{
+		font-size: 40px;
+	}
+	#side-menu{
+	border-right: 0px solid #444;
+	}
+}
+@media (max-width: 990px) {
+	#feed{
+		padding: 2rem;
+	}
+	
+} 
