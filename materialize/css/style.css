@@ -1,0 +1,19 @@
+.brand-logo img{
+	width: 100px;
+}
+nav {
+	height: 100px;
+}
+
+@media (max-width: 993px) {
+	.brand-logo img{
+		width: 74px;
+		padding-top:10px;
+	}
+	nav {
+		height: 90px;
+	}
+	nav .sidenav-trigger i{
+		margin-top: 15px;
+	}
+}
