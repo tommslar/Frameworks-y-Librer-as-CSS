@@ -1,0 +1,45 @@
+body{
+	font-family: 'Roboto';
+	height: 100%;
+}
+h1{
+	font-family: 'Lobster', cursive;
+}
+#cuerpo{
+	height: 600px;
+	background-color: yellow;
+}
+#side-menu{
+	height: 500px;
+	background-color: red;
+}
+.encabezado{
+ 	height: 120px;
+}
+.encabezado h1{
+	float: right;
+}
+.encabezado h5{
+	float: right;
+	font-style: italic;
+}
+.search-bar {
+  border-radius: 30px;
+  background-image: url("http://image.ibb.co/i7NbrQ/search_icon_15.png");
+  background-position: 0.625rem 0.625rem;
+  background-repeat: no-repeat;
+  padding: 0.75rem 1.25rem 0.75rem 2rem;
+}
+#contenido{
+	height: 500px;
+	background-color: blue;
+}
+footer{
+	height: 55px;
+	background-color: #444;
+}
+footer p{
+	text-align: center;
+	color: white;
+	padding-top: 1%;		
+}
