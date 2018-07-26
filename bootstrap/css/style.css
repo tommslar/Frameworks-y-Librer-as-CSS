@@ -1,0 +1,168 @@
+body{
+	height: 100%;
+	color: #444;
+}
+
+h3{
+	font-family: 'Pacifico', cursive;
+}
+
+header{
+	background-color: #bbdefb;
+}
+
+#cuerpo{
+	height: 100%;
+	display: flex;
+}
+
+#logo {
+	height: 110px;
+}
+
+#logo img {
+	float: right;
+	width: 220px;
+    padding-right: 2em;
+    padding-top: 2em;
+}
+
+#redes {
+	height: 40px;
+}
+
+#redes ul {
+	float: left;
+	list-style: none;
+	display: inline-flex;
+	padding-left: 0px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    color: #444;
+    text-align: center;
+}
+
+.fa:hover {
+    background-color: white;
+}
+
+#redes ul li a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+nav {
+	clear: both;
+	padding: 0px !important;
+}
+
+.nav-item a{
+	color: white !important;
+}
+
+.nav-item a:hover{
+	color: #444 !important;
+}
+.nav-link:hover{
+	background-color: white;
+}
+
+#post{
+	background-color: #bbdefb;
+    color: #444;
+    padding: 1%;
+}
+
+.commentrow .fa:hover {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+.commentrow .fa {
+    padding: 10px;
+    font-size: 45px;
+    text-align: center;
+    width: unset;
+
+}
+
+#side-content{
+	background-color: #fed960;
+	
+}
+
+.list-group-item{
+	margin-bottom: 2px;
+}
+
+.list-group-item:hover{
+	background-color: #444;
+    color: white;
+}
+
+#buscador{
+	margin-top: 10px;
+}
+
+
+#buscador div button {
+	background-color: white;
+}
+#buscador div button i {
+	padding: 0px;
+	width: unset;
+}
+
+footer {
+	background-color: #343a40;
+	height: 60px;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+@media (max-width: 860px) { 
+	#cuerpo{
+		display: block;
+	}
+
+	#contenido {
+		width: 100%;
+	}
+	#side-content{
+		width: 100%;
+		margin-top: 20px;
+	}
+	#buscador{
+		padding-top: 30px;
+	}
+	#listado{
+		padding-bottom: 20px;
+	}
+	footer p{
+		padding-top: 10px;
+	}
+ }
+
+ @media (max-width: 425px) { 
+	#redes{
+		text-align: center;
+	}
+	#redes ul{
+		float: none;
+	}
+	#logo img{
+		float: none;
+		padding-right: 0em;
+		margin: 0 auto;
+		display: block;
+	}
+ }
