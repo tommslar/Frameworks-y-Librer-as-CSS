@@ -36,23 +36,15 @@ nav a{
 #redes{
 	background-color:#47abd8;
 }
-#entrada{
-	
+#autor .container{
 }
-#autor{
+#autor img{
+	width: 100%;
+}
+#perfil {
 	background-color: #ecde99;
-	height: 300px;
+	padding: 10%;
 }
-footer{
-	height: 50px;
-	color: white;
-	background-color: #ee6e73;
-}
-footer p{
-	text-align: center;
-	padding-top: 1%;
-}
-
 #post{
 	padding:3%;
 	padding-top: 1%;
@@ -71,6 +63,15 @@ footer p{
 }
 textarea {
 	background-color: white;
+}
+footer{
+	height: 50px;
+	color: white;
+	background-color: #ee6e73;
+}
+footer p{
+	text-align: center;
+	padding-top: 1%;
 }
 
 @media (max-width: 993px) {
