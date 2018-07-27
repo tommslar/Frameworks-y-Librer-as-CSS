@@ -1,5 +1,6 @@
 body{
 	color: #444;
+	height: 100%
 }
 .brand-logo img{
 	width: 125px;
@@ -10,21 +11,14 @@ body{
 	height: 60px;
 	margin-top: -25px;
 }
-#slogan h4{
+#slogan h6{
 	text-align: center;
-	padding-top: 8px;
+	padding-top: 20px;
 	font-style: italic;
 }
-
-/*
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+nav{
+	height: 77px;
 }
-*/
 .icon-bar a {
   display: block;
   text-align: center;
@@ -33,35 +27,29 @@ body{
   color: white;
   font-size: 20px;
 }
-
 .icon-bar a:hover {
-    background-color: #000;
+    background-color: #444;
 }
-
-
-#galeria{
-	background-color:pink;
+#redes{
+	background-color:#47abd8;
 }
-#row1{
-	background-color:green;
+#entrada{
+	background-color: #99d2ec;
+	height: 300px;
 }
-#row2{
-	background-color:blue;
+#autor{
+	background-color: pink;
+	height: 300px;
 }
-#row3{
-	background-color:red;
+footer{
+	height: 50px;
+	color: white;
+	background-color: #ee6e73;
 }
-
-
-
-
-
-
-
-
-
-
-
+footer p{
+	text-align: center;
+	padding-top: 1%;
+}
 
 @media (max-width: 993px) {
 	.brand-logo img{
@@ -79,11 +67,25 @@ body{
 	    width: 100%;
 	    justify-content: space-around;
 	}
+	#redes{
+		margin-bottom: 20px;
+	}
 
 }
 
-@media (max-width: 360px) {
-	#slogan h4{
-		font-size: 1.5em;
+
+@media (min-width: 993px) {
+	#redes{
+		height: 485px;
+		text-align: center;
+	}
+	.icon-bar{
+		height: 485px;
+		display: inline-flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+	}
+	.icon-bar a{
+		font-size: 40px;
 	}
 }
