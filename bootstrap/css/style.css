@@ -118,6 +118,10 @@ nav {
 	width: unset;
 }
 
+.form-control:focus{
+		box-shadow: none;
+}
+
 footer {
 	background-color: #343a40;
 	height: 60px;
